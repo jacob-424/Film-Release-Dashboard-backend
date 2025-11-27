@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const port = 8080;
+const loginService = require("./services/loginService.js");
+const registerService = require("./services/registerService.js");
+const { upsertAccountDetails, getAccountDetails } = require("./services/accountService");
 
 //Simple request time logger
 app.use(
@@ -11,20 +14,19 @@ app.use(
     }
 );
 
-app.use(express.json());
+app.use(express.json({ limit: "100mb" }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.post("/login", (request, response) => {
-    console.log(request.body);
-    response.status(200).json({ message: "Successfully logged in"});
-});
+app.post("/login", loginService);
 
-app.post("/registration", (request, response) => {
-    console.log(request.body);
-    response.status(201).json({ message: "Successfully registered"});
-});
+app.post("/registration", registerService);
 
-app.post("/account", (request, response) => {
+app.post("/account", upsertAccountDetails);
+
+app.get("/account", getAccountDetails);
+
+/*app.post("/account", (request, response) => {
     console.log(request.body);
     response.status(201).json({ message: "Successfully updated account"});
 });
@@ -43,6 +45,6 @@ app.get("/account", (request, response) => {
         email: "Email",
         userID: request.query.userID
     })
-});
+});*/
 
 app.listen(port);
