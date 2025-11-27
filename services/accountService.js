@@ -2,19 +2,19 @@ const UserAccountDetailsRepository = require('../repositories/userAccountDetails
 const logger = require('../logger/logger');
 
 const getAccountDetails = async (request, response) => {
-    const { userId } = request.query;
+    const { userID } = request.query;
     const userAccountDetailsRepository = new UserAccountDetailsRepository();
-    const existingUserAccountDetails = await userAccountDetailsRepository.select(userId);
+    const existingUserAccountDetails = await userAccountDetailsRepository.select(userID);
 
     if (existingUserAccountDetails) {
         logger.info(`existingUserAccountDetails ${existingUserAccountDetails.first_name}`);
         return response.status(200).json({
             id: existingUserAccountDetails.id,
-            userId: existingUserAccountDetails.user_id,
+            userID: existingUserAccountDetails.user_id,
             firstName:existingUserAccountDetails.first_name,
             lastName: existingUserAccountDetails.last_name,
-            address1: existingUserAccountDetails.address_1,
-            address2:existingUserAccountDetails.address_2,
+            addressLine1: existingUserAccountDetails.address_1,
+            addressLine2:existingUserAccountDetails.address_2,
             city: existingUserAccountDetails.city,
             state: existingUserAccountDetails.state,
             zipCode: existingUserAccountDetails.zip_code,
@@ -29,16 +29,16 @@ const getAccountDetails = async (request, response) => {
 
 const upsertAccountDetails = async (request, response) => {
     const {
-        userId, firstName, lastName, address1, address2,
+        userID, firstName, lastName, addressLine1, addressLine2,
         city, state, zipCode, phoneNumber, email
     } = request.body;
     const userAccountDetailsRepository = new UserAccountDetailsRepository();
 
-    const existingUserAccountDetails = await userAccountDetailsRepository.select(userId);
+    const existingUserAccountDetails = await userAccountDetailsRepository.select(userID);
 
     if (existingUserAccountDetails) {
         const userAccountDetails = await userAccountDetailsRepository.update(
-            userId, firstName, lastName, address1, address2,
+            userID, firstName, lastName, addressLine1, addressLine2,
             city, state, zipCode, phoneNumber, email
         );
 
@@ -49,7 +49,7 @@ const upsertAccountDetails = async (request, response) => {
     }
     else {
         const userAccountDetails = await userAccountDetailsRepository.insert(
-            userId, firstName, lastName, address1, address2,
+            userID, firstName, lastName, addressLine1, addressLine2,
             city, state, zipCode, phoneNumber, email
         );
 
