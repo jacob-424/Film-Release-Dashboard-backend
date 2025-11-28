@@ -33,7 +33,6 @@ const upsertAccountDetails = async (request, response) => {
         city, state, zipCode, phoneNumber, email
     } = request.body;
     const userAccountDetailsRepository = new UserAccountDetailsRepository();
-
     const existingUserAccountDetails = await userAccountDetailsRepository.select(userID);
 
     if (existingUserAccountDetails) {

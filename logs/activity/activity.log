@@ -99,3 +99,46 @@
 {"level":"info","message":"Authentication successful!","timestamp":"11/26/2025, 9:49:10 PM"}
 {"level":"info","message":"No data for that account.","timestamp":"11/26/2025, 9:49:12 PM"}
 {"level":"info","message":"No data for that account.","timestamp":"11/26/2025, 9:49:12 PM"}
+{"level":"error","message":"sadwawd does not have an account, need to register.","timestamp":"11/27/2025, 8:01:49 PM"}
+{"level":"error","message":"Test23 does not have an account, need to register.","timestamp":"11/27/2025, 8:03:47 PM"}
+{"level":"info","message":"existingUserAccount Test6","timestamp":"11/27/2025, 8:04:00 PM"}
+{"level":"error","message":"Password is incorrect.","timestamp":"11/27/2025, 8:04:00 PM"}
+{"level":"info","message":"existingUserAccount Test7","timestamp":"11/27/2025, 8:05:29 PM"}
+{"level":"info","message":"Authentication successful!","timestamp":"11/27/2025, 8:05:29 PM"}
+{"level":"info","message":"No data for that account.","timestamp":"11/27/2025, 8:14:19 PM"}
+{"level":"info","message":"No data for that account.","timestamp":"11/27/2025, 8:14:19 PM"}
+{"level":"info","message":"No data for that account.","timestamp":"11/27/2025, 8:16:20 PM"}
+{"level":"info","message":"No data for that account.","timestamp":"11/27/2025, 8:16:20 PM"}
+{"level":"info","message":"existingUserAccountDetails Test Name","timestamp":"11/27/2025, 8:20:50 PM"}
+{"level":"info","message":"existingUserAccountDetails Test Name","timestamp":"11/27/2025, 8:20:50 PM"}
+{"level":"info","message":"existingUserAccount Test","timestamp":"11/27/2025, 8:22:26 PM"}
+{"level":"info","message":"Authentication successful!","timestamp":"11/27/2025, 8:22:26 PM"}
+{"level":"info","message":"existingUserAccountDetails Test","timestamp":"11/27/2025, 8:22:28 PM"}
+{"level":"info","message":"existingUserAccountDetails Test","timestamp":"11/27/2025, 8:22:28 PM"}
+{"level":"info","message":"existingUserAccount Test7","timestamp":"11/27/2025, 8:22:42 PM"}
+{"level":"info","message":"Authentication successful!","timestamp":"11/27/2025, 8:22:42 PM"}
+{"level":"info","message":"existingUserAccountDetails Test Name","timestamp":"11/27/2025, 8:22:43 PM"}
+{"level":"info","message":"existingUserAccountDetails Test Name","timestamp":"11/27/2025, 8:22:43 PM"}
+{"level":"info","message":"existingUserAccountDetails Test Name 2","timestamp":"11/27/2025, 8:24:13 PM"}
+{"level":"info","message":"existingUserAccountDetails Test Name 2","timestamp":"11/27/2025, 8:24:13 PM"}
+{"level":"info","message":"existingUserAccount Test7","timestamp":"11/27/2025, 8:24:22 PM"}
+{"level":"info","message":"Authentication successful!","timestamp":"11/27/2025, 8:24:22 PM"}
+{"level":"info","message":"existingUserAccountDetails Test Name 2","timestamp":"11/27/2025, 8:24:23 PM"}
+{"level":"info","message":"existingUserAccountDetails Test Name 2","timestamp":"11/27/2025, 8:24:23 PM"}
+{"level":"error","message":"Test8 already has an account","timestamp":"11/27/2025, 8:32:29 PM"}
+{"level":"info","message":"Creating new record in user_account table","timestamp":"11/27/2025, 8:35:47 PM"}
+{"level":"info","message":"Record created with id 43","timestamp":"11/27/2025, 8:35:47 PM"}
+{"level":"info","message":"No data for that account.","timestamp":"11/27/2025, 8:44:37 PM"}
+{"level":"info","message":"No data for that account.","timestamp":"11/27/2025, 8:44:37 PM"}
+{"level":"info","message":"existingUserAccount Test","timestamp":"11/27/2025, 8:44:47 PM"}
+{"level":"info","message":"Authentication successful!","timestamp":"11/27/2025, 8:44:47 PM"}
+{"level":"info","message":"existingUserAccountDetails Test","timestamp":"11/27/2025, 8:44:48 PM"}
+{"level":"info","message":"existingUserAccountDetails Test","timestamp":"11/27/2025, 8:44:48 PM"}
+{"level":"info","message":"existingUserAccount Test7","timestamp":"11/27/2025, 8:44:55 PM"}
+{"level":"info","message":"Authentication successful!","timestamp":"11/27/2025, 8:44:56 PM"}
+{"level":"info","message":"existingUserAccountDetails ","timestamp":"11/27/2025, 8:44:57 PM"}
+{"level":"info","message":"existingUserAccountDetails ","timestamp":"11/27/2025, 8:44:57 PM"}
+{"level":"info","message":"existingUserAccount Test10","timestamp":"11/27/2025, 8:45:07 PM"}
+{"level":"info","message":"Authentication successful!","timestamp":"11/27/2025, 8:45:08 PM"}
+{"level":"info","message":"No data for that account.","timestamp":"11/27/2025, 8:45:08 PM"}
+{"level":"info","message":"No data for that account.","timestamp":"11/27/2025, 8:45:08 PM"}
